@@ -8,5 +8,20 @@
 
 
 body {
-    background-color: pink;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+header {
+    background-image: url(../../assets/home-1.jpeg);
+}
+
+.iPad {
+    background-image: url(../../assets/home-4.jpeg);
 }
