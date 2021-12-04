@@ -238,3 +238,38 @@ html {
 body {
   background-color: #ffffff;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu1 ul,
+.menu2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.iPad {
+  background-image: url(../assets/home-4.jpeg);
+}

@@ -19,9 +19,25 @@ body {
 
 
 header {
-    background-image: url(../../assets/home-1.jpeg);
+    background-image: url(../assets/home-1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu1 ul, 
+.menu2 ul {
+    display: flex;
+    list-style: none;
 }
 
 .iPad {
-    background-image: url(../../assets/home-4.jpeg);
+    background-image: url(../assets/home-4.jpeg);
+
 }
