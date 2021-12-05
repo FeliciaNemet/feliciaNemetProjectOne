@@ -18,6 +18,10 @@ header {
     height: 90vh;
 }
 
+textarea {
+    resize: none;
+}
+
 .contact {
     display: flex;
     flex-direction: row;

@@ -323,6 +323,17 @@ footer p {
   height: 40vh;
 }
 
+.contact2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.contact3, .contact4, .contact5 {
+  padding: 20px;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,4 +344,8 @@ footer p {
           flex-direction: row;
   color: #ffffff;
   background: #333333;
+}
+
+textarea {
+  resize: none;
 }

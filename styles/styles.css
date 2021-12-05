@@ -370,6 +370,7 @@ header {
 
 .iPad {
   background-image: url(../assets/home-4.jpeg);
+  background-repeat: no-repeat;
 }
 
 .split {
@@ -422,6 +423,95 @@ header {
   padding-top: 20px;
 }
 
+.iPadWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.iPadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+}
+
+.wand {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pin {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.desktop {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.shopping-bag {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sliders {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.smileyFace {
+  border: 2px solid #333333;
+  padding: 15px;
+  border-radius: 50%;
+  width: 13%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +526,10 @@ header {
 
 .contacts, .recentPosts, .twitter {
   padding: 80px;
+}
+
+.contacts {
+  text-align: left;
 }
 
 .conacts h3 {
