@@ -32,6 +32,39 @@ header {
 
 .branding {
     background: $last;
+    padding-top: 180px;
+    position: relative;
+}
+.branding .img1 {
+    text-align: center;
+    
+}
+
+.branding .img2 {
+    position: absolute;
+    top: 85px;
+    left: 380px;
+    
+}
+
+.branding h2 {
+    text-transform: uppercase;
+    font-family: $baseFont;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.branding p {
+    font-family: $secondFont;
+    font-size: 0.7rem;
+}
+.boss {
+    display: flex;
+}
+
+.one, .two {
+    text-align: center;
+    width: 50%;
+    padding: 80px;
 }
 
 
@@ -71,9 +104,35 @@ header {
     width: 50%;
 }
 
+.circle {
+    padding: 180px;
+}
+
+.circlePic {
+    text-align: center;
+}
+
+.circlePic img {
+    border-radius: 50%;
+}
+
+.three p {
+    text-align: center;
+    line-height: 24px;
+    padding-top: 20px;
+}
 .contact {
     display: flex;
     flex-direction: row;
     color: $tertiary;
     background: $primary;
+}
+
+.contacts, .recentPosts, .twitter {
+    padding: 80px;
+}
+
+.conacts h3 {
+    font-family: $secondFont;
+    font-weight: 400;
 }

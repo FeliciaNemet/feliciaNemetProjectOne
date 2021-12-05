@@ -310,6 +310,12 @@ footer p {
   font-size: 0.9rem;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 header {
   background-image: url(../assets/blog-1.jpeg);
   background-repeat: no-repeat;

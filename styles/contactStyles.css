@@ -310,6 +310,12 @@ footer p {
   font-size: 0.9rem;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .contactImg {
   background-image: url(../assets/contact-1.jpeg);
   background-repeat: none;
