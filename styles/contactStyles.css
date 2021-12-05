@@ -234,3 +234,18 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.contactImg {
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: none;
+  background-size: cover;
+  height: 40vh;
+}
+
+
+.contact8 {
+  background-image: url(../assets/contact-2.jpeg);
+  background-repeat: none;
+  background-size: cover;
+  height: 80vh;
+}
