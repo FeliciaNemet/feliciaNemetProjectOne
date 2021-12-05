@@ -1,6 +1,10 @@
 
 
 @import "setup";
+@import "typography";
+@import "colourPalette";
+@import "nav";
+@import "footer";
 
 
 .contactImg {
@@ -8,4 +12,11 @@
     background-repeat: none;
     background-size: cover;
     height: 40vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    color: $tertiary;
+    background: $primary;
 }

@@ -1,10 +1,21 @@
 
 @import "setup";
+@import "typography";
+@import "colourPalette";
+@import "nav";
+@import "footer";
 
 
 header {
-    background-color: pink;
+    background-image: url(../assets/blog-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    color: $tertiary;
+    background: $primary;
 }

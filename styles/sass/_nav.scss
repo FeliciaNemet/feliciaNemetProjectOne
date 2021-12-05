@@ -1,0 +1,32 @@
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu1 ul, 
+.menu2 ul {
+    display: flex;
+}
+
+.menu1 li,
+.menu2 li {
+    text-decoration: none;
+    list-style: none;
+    color: $primary;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+.menu1 a,
+.menu2 a {
+    text-decoration: none;
+    list-style: none;
+    color: $primary;
+    font-family: $baseFont;
+    text-transform: uppercase;
+    justify-content: space-around;
+    font-size: 0.7rem;
+    margin: 5px;
+
+}

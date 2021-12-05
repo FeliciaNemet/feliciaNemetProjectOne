@@ -235,6 +235,81 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.85rem;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu1 ul,
+.menu2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu1 li,
+.menu2 li {
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+
+.menu1 a,
+.menu2 a {
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.7rem;
+  margin: 5px;
+}
+
+footer {
+  background: #333333;
+  color: #ffffff;
+  height: 30vh;
+  padding: 80px;
+}
+
+footer p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  font-size: 0.9rem;
+}
+
 body {
   background-color: #ffffff;
 }
@@ -253,23 +328,54 @@ header {
   width: auto;
 }
 
-.navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.menu1 ul,
-.menu2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
+.branding {
+  background: #c3dab7;
 }
 
 .iPad {
   background-image: url(../assets/home-4.jpeg);
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.egy {
+  width: 50%;
+  background-color: #c3dab7;
+  text-align: center;
+  padding: 50px;
+}
+
+.egy h2 {
+  text-transform: uppercase;
+}
+
+.egy a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 0.5em 1em;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.ketto {
+  width: 50%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffffff;
+  background: #333333;
 }

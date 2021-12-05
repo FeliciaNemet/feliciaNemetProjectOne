@@ -1,6 +1,10 @@
 
 
 @import "setup";
+@import "typography";
+@import "colourPalette";
+@import "nav";
+@import "footer";
 
 
 
@@ -26,18 +30,50 @@ header {
     width: auto;
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-evenly;
+.branding {
+    background: $last;
 }
 
-.menu1 ul, 
-.menu2 ul {
-    display: flex;
-    list-style: none;
-}
+
 
 .iPad {
     background-image: url(../assets/home-4.jpeg);
+}
 
+.split {
+    display: flex;
+
+}
+
+.egy {
+    width: 50%;
+    background-color: $last;
+    text-align: center;
+    padding: 50px;
+}
+
+.egy h2 {
+    text-transform: uppercase;
+}
+
+.egy a {
+    text-decoration: none;
+    font-family: $baseFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 0.5em 1em;
+    background-color: $tertiary;
+    color: $primary;
+}
+
+.ketto {
+    width: 50%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    color: $tertiary;
+    background: $primary;
 }
