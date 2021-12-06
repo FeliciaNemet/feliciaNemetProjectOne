@@ -320,6 +320,10 @@ body {
   width: 90%;
 }
 
+.visuallyHidden {
+  display: none;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
@@ -511,4 +515,15 @@ header {
 .conacts h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+.twitter p, .contacts p, .recentPosts p {
+  font-size: 0.7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.twitter button {
+  background: #c3dab7;
+  border: 1px solid #333333;
 }

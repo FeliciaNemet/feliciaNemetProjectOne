@@ -21,6 +21,9 @@ body {
     width: 90%;
 }
 
+.visuallyHidden {
+    display: none;
+}
 
 header {
     background-image: url(../assets/home-1.jpeg);
@@ -187,4 +190,15 @@ header {
 .conacts h3 {
     font-family: $secondFont;
     font-weight: 400;
+}
+
+.twitter p, .contacts p, .recentPosts p {
+    font-size: 0.7;
+    font-family: $secondFont;
+    font-weight: 400;
+}
+
+.twitter button {
+    background: $last;
+    border: 1px solid #333333
 }
