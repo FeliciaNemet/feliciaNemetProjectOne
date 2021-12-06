@@ -450,58 +450,34 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 50%;
+  padding: 80px;
 }
 
-.wand {
+.iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
+  width: 50%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.iPad1 h3, .iPad2 h3, .iPad3 h3, .iPad4 h3, .iPad5 h3, .iPad6 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9;
+}
+
+.iPad1 p, .iPad2 p, .iPad3 p, .iPad4 p, .iPad5 p, .iPad6 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.wand, .pin, .desktop, .shoppingBag, .sliders, .smileyFace {
   border: 2px solid #333333;
   padding: 15px;
   border-radius: 50%;
-  width: 13%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.pin {
-  border: 2px solid #333333;
-  padding: 15px;
-  border-radius: 50%;
-  width: 13%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.desktop {
-  border: 2px solid #333333;
-  padding: 15px;
-  border-radius: 50%;
-  width: 13%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.shopping-bag {
-  border: 2px solid #333333;
-  padding: 15px;
-  border-radius: 50%;
-  width: 13%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.sliders {
-  border: 2px solid #333333;
-  padding: 15px;
-  border-radius: 50%;
-  width: 13%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.smileyFace {
-  border: 2px solid #333333;
-  padding: 15px;
-  border-radius: 50%;
-  width: 13%;
+  width: 35%;
+  height: 35%;
   font-size: 30px;
   text-align: center;
 }
