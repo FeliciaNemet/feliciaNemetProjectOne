@@ -11,6 +11,9 @@
     width: 90%;
 }
 
+.visuallyHidden {
+    display: none;
+}
 header {
     background-image: url(../assets/blog-1.jpeg);
     background-repeat: no-repeat;
@@ -18,13 +21,178 @@ header {
     height: 90vh;
 }
 
-textarea {
-    resize: none;
+.blog1 h2 {
+    text-transform: uppercase;
+    font-family: $baseFont;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
+.blog1 p {
+    font-size: 0.9rem;
+
+}
+
+.blog1 p span {
+    color: rgba(51, 51, 51, 0.5);
+}
+.master {
+    display: flex;
+}
+
+.alex {
+    width: 50%;
+    display: flex;
+}
+.alex img {
+    border-radius: 50%;
+}
+
+.alex h4, .blog2 h4 {
+    font-family: $secondFont;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.alex p, .blog2 p {
+    font-size: 0.7rem;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.blog2 {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.bold p {
+    font-family: $secondFont;
+    font-weight: 600;
+}
+
+.regular p {
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.5);
+}
+.blog5 {
+    display: flex;
+    width: calc(33% - 40px);
+}
+
+.blog7 {
+    display: flex;
+    flex-direction: column;
+}
+.card1, .card2, .card3 {
+    margin: 0 20px;
+}
+
+.box1, .box2 {
+    
+    
+}
+
+.box1 img, .box2 img {
+    
+}
+
+.comment1, .comment2 {
+    background-color: $secondary;
+
+
+}
+
+.comment1 h4, .comment2 h4 {
+    text-transform: uppercase;
+    font-family: $baseFont;
+    font-weight: 400;
+}
+.comment1 h4 em, .comment2 h4 em {
+    text-transform: lowercase;
+    font-weight: 400;
+}
+.comment1 h4 em span, .comment2 h4 em span {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.comment1 p, .comment2 p {
+    font-family: $baseFont;
+    font-size: 0.9rem;
+}
+
+.time p {
+    font-size: 0.7rem;
+}
+.blog9 {
+    display: flex;
+}
+.blog9 button {
+    border: none;
+    border-bottom: 2px solid $secondary;
+    color: rgba(51, 51, 51, 0.5);
+    background-color: $tertiary;
+    margin-bottom: 50px;
+}
+
+input[type=subject], input[type=name] {
+    border: none;
+    border-bottom: 2px solid $secondary;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.blog10 input[type=email] {
+    border: none;
+    border-bottom: 2px solid $primary;
+    color: $primary;
+    margin: 0 200px;
+    padding: 0em 1em;
+
+}
+
+.blog11 {
+    display: block;
+    flex: 1 0 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $secondary;
+    color: rgba(51, 51, 51, 0.4);
+}
 .contact {
     display: flex;
     flex-direction: row;
     color: $tertiary;
     background: $primary;
+    padding: 80px;
+}
+
+.contact input[type=email] {
+    border: 1px solid $primary;
+    color: $primary;
+}
+
+
+@media(max-width: 940px) {
+
+}
+
+
+@media(max-width: 767px) {
+
+
+
+}
+
+
+@media(max-width: 480px) {
+
+
+
+    
 }

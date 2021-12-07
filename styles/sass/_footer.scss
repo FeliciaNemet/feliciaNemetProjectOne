@@ -1,8 +1,9 @@
 footer {
-    background: #333333;
+    background: $primary;
     color: #ffffff;
     height: 30vh;
     padding: 80px;
+    border-top: 2px solid rgba(51, 51, 51, .3);
 }
 
 footer p {

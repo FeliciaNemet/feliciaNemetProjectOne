@@ -299,6 +299,7 @@ footer {
   color: #ffffff;
   height: 30vh;
   padding: 80px;
+  border-top: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 footer p {
@@ -377,7 +378,15 @@ header {
   background-repeat: no-repeat;
 }
 
-.split {
+.pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.splits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,11 +396,12 @@ header {
   width: 50%;
   background-color: #c3dab7;
   text-align: center;
-  padding: 50px;
+  padding: 200px 30px;
 }
 
 .egy h2 {
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 
 .egy a {
@@ -407,6 +417,13 @@ header {
 
 .ketto {
   width: 50%;
+}
+
+.ketto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .circle {
@@ -458,38 +475,67 @@ header {
 }
 
 .iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
-  width: 50%;
-  padding: 5px;
+  width: calc(50% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 25px;
+}
+
+.iPod {
+  margin-left: 20px;
+  width: 100%;
+  padding: 10px;
 }
 
 .iPad1 h3, .iPad2 h3, .iPad3 h3, .iPad4 h3, .iPad5 h3, .iPad6 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 0.9;
+  font-size: 0.7rem;
 }
 
 .iPad1 p, .iPad2 p, .iPad3 p, .iPad4 p, .iPad5 p, .iPad6 p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
+  opacity: 0.5;
 }
 
-.wand, .pin, .desktop, .shoppingBag, .sliders, .smileyFace {
+.iPadBox i {
+  position: relative;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.iPadBox i::after {
+  content: "";
+  position: absolute;
   border: 2px solid #333333;
-  padding: 15px;
+  top: -10px;
+  left: -10px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  width: 35%;
-  height: 35%;
-  font-size: 30px;
   text-align: center;
 }
 
-.split {
+.wand, .pin, .desktop, .shoppingBag, .sliders, .smileyFace {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 20%;
+  margin-right: 15px;
+}
+
+.iPadBox .pin i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #333333;
+  top: -10px;
+  left: -20px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .contact {

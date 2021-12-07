@@ -299,6 +299,7 @@ footer {
   color: #ffffff;
   height: 30vh;
   padding: 80px;
+  border-top: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 footer p {
@@ -316,6 +317,10 @@ footer p {
   width: 90%;
 }
 
+.visuallyHidden {
+  display: none;
+}
+
 header {
   background-image: url(../assets/blog-1.jpeg);
   background-repeat: no-repeat;
@@ -323,8 +328,162 @@ header {
   height: 90vh;
 }
 
+.blog1 h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.blog1 p {
+  font-size: 0.9rem;
+}
+
+.blog1 p span {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alex {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alex img {
+  border-radius: 50%;
+}
+
+.alex h4, .blog2 h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.alex p, .blog2 p {
+  font-size: 0.7rem;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.blog2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.bold p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.regular p {
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.blog5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(33% - 40px);
+}
+
+.blog7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card1, .card2, .card3 {
+  margin: 0 20px;
+}
+
+.comment1, .comment2 {
+  background-color: #f6f6f6;
+}
+
+.comment1 h4, .comment2 h4 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.comment1 h4 em, .comment2 h4 em {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.comment1 h4 em span, .comment2 h4 em span {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.comment1 p, .comment2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.time p {
+  font-size: 0.7rem;
+}
+
+.blog9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog9 button {
+  border: none;
+  border-bottom: 2px solid #f6f6f6;
+  color: rgba(51, 51, 51, 0.5);
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+input[type=subject], input[type=name] {
+  border: none;
+  border-bottom: 2px solid #f6f6f6;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.blog10 input[type=email] {
+  border: none;
+  border-bottom: 2px solid #333333;
+  color: #333333;
+  margin: 0 200px;
+  padding: 0em 1em;
+}
+
+.blog11 {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 textarea {
   resize: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #f6f6f6;
+  color: rgba(51, 51, 51, 0.4);
 }
 
 .contact {
@@ -337,4 +496,10 @@ textarea {
           flex-direction: row;
   color: #ffffff;
   background: #333333;
+  padding: 80px;
+}
+
+.contact input[type=email] {
+  border: 1px solid #333333;
+  color: #333333;
 }
