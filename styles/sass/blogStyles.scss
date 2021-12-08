@@ -38,6 +38,7 @@ header {
 }
 .master {
     display: flex;
+    padding-bottom: 30px;
 }
 
 .alex {
@@ -48,6 +49,9 @@ header {
     border-radius: 50%;
 }
 
+.chief {
+    padding: 10px;
+}
 .alex h4, .blog2 h4 {
     font-family: $secondFont;
     font-weight: 400;
@@ -62,9 +66,17 @@ header {
 .blog2 {
     width: 50%;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    padding: 10px;
+    
 }
 
+.bold {
+    width: 100%;
+    border-top: 2px solid $secondary;
+    padding-top: 50px;
+
+}
 
 .bold p {
     font-family: $secondFont;
@@ -75,30 +87,59 @@ header {
     font-weight: 400;
     color: rgba(51, 51, 51, 0.5);
 }
-.blog5 {
+
+.blog3 {
     display: flex;
-    width: calc(33% - 40px);
 }
+
+.blog3 h4 {
+    text-transform: uppercase;
+    font-family: $baseFont;
+    font-weight: 400;
+}
+.blog3 i {
+    font-size: 20px;
+    padding:  25px 10px;
+}
+
+.blog5 {
+    border-top: 2px solid $secondary;
+    display: flex;
+    width: calc(100% / (33% - 40px));
+    padding-top: 50px;
+}
+    
 
 .blog7 {
     display: flex;
     flex-direction: column;
+    border-top: 2px solid $secondary;
+    padding-top: 50px;
 }
 .card1, .card2, .card3 {
     margin: 0 20px;
 }
+.card1 p, .card2 p, .card3 p {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: $baseFont;
+}
 
 .box1, .box2 {
-    
-    
+    display: flex;
 }
 
 .box1 img, .box2 img {
-    
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
 }
 
 .comment1, .comment2 {
     background-color: $secondary;
+    margin: 10px 0px 10px 50px;
+    width: 100%;
+    padding: 0 50px 30px 20px;
 
 
 }
@@ -118,14 +159,18 @@ header {
 }
 .comment1 p, .comment2 p {
     font-family: $baseFont;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    color: rgba(51, 51, 51, 0.8);
 }
 
 .time p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    color: rgba(51, 51, 51, 0.5);
 }
 .blog9 {
     display: flex;
+    border-top: 2px solid $secondary;
+    padding-right: 50px;
 }
 .blog9 button {
     border: none;
@@ -139,14 +184,21 @@ input[type=subject], input[type=name] {
     border: none;
     border-bottom: 2px solid $secondary;
     color: rgba(51, 51, 51, 0.5);
+    padding-right: 200px;
+    font-size: 0.7rem;
+}
+
+.blog10 {
+    padding-top: 60px;
 }
 
 .blog10 input[type=email] {
     border: none;
     border-bottom: 2px solid $primary;
     color: $primary;
-    margin: 0 200px;
-    padding: 0em 1em;
+    margin: 0 50px;
+    padding-right: 200px;
+    font-size: 0.7rem;
 
 }
 
@@ -163,20 +215,76 @@ textarea {
     border: none;
     border-bottom: 2px solid $secondary;
     color: rgba(51, 51, 51, 0.4);
+    font-size: 0.7rem;
 }
 .contact {
     display: flex;
     flex-direction: row;
     color: $tertiary;
     background: $primary;
-    padding: 80px;
+    padding: 60px;
 }
 
+.contacts, .recentPosts, .twitter {
+    padding: 10px 30px;
+}
+.contact h3 {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contacts h3 {
+    text-align: left;
+
+}
+
+.contacts p {
+    text-align: left;
+}
+
+.contacts i {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.recentPosts h3 {
+    text-align: center;
+}
+
+.recentPosts ul {
+    font-size: 0.7rem;
+}
+
+.twitter h3 {
+    text-align: right;
+}
+
+.contact p {
+    font-size: 0.7rem;
+}
+
+.twitter p {
+    text-align: right;
+}
 .contact input[type=email] {
     border: 1px solid $primary;
     color: $primary;
+    margin: 0;
+    font-size: 0.7rem;
+    width: 80%;
+    padding: 1em 1.5em;
 }
 
+.twitter form {
+    display: flex;
+}
+
+.twitter button {
+    background: $last;
+    border: 1px solid #333333;
+    padding: 0.5rem;
+}
 
 @media(max-width: 940px) {
 

@@ -38,6 +38,8 @@ header {
     padding-top: 180px;
     position: relative;
 }
+
+
 .branding .img1 {
     text-align: center;
     
@@ -55,7 +57,10 @@ header {
     font-family: $baseFont;
     font-weight: 400;
     font-size: 0.9rem;
+    position: relative;
 }
+
+
 .branding p {
     font-family: $secondFont;
     font-size: 0.7rem;
@@ -77,10 +82,6 @@ header {
     background-repeat: no-repeat;
 }
 
-.pics {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .splits {
     display: flex;
@@ -97,19 +98,25 @@ header {
 .egy h2 {
     text-transform: uppercase;
     font-family: $baseFont;
+    font-weight: 400;
 }
 
 .egy a {
     text-decoration: none;
     font-family: $baseFont;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.7rem;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     background-color: $tertiary;
     color: $primary;
 }
-
+.egy p {
+    font-size: 0.9rem;
+    color: rgba(51, 51, 51, .5);
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
 .ketto {
     width: 50%;
 }
@@ -121,6 +128,7 @@ header {
 }
 .circle {
     padding: 180px;
+    position: relative;
 }
 
 .circlePic {
@@ -129,12 +137,29 @@ header {
 
 .circlePic img {
     border-radius: 50%;
+    
+}
+
+.arrow1 {
+    position: absolute;
+    font-size: 40px;
+    top: 380px;
+    left: 200px;
+}
+
+.arrow2 {
+    position: absolute;
+    font-size: 40px;
+    color: rgba(51, 51, 51, .5);
+    top: 380px;
+    right: 200px;
 }
 
 .three p {
     text-align: center;
-    line-height: 24px;
+    line-height: 1.8rem;
     padding-top: 20px;
+    color:  rgba(51, 51, 51, .8)
 }
 
 .iPadWrapper {
@@ -150,30 +175,30 @@ header {
     justify-content: right;
     align-items: flex-end;
     width: 50%;
-    padding: 80px;
+    padding: 150px;
+    padding-right: 0;
+    padding-left: 0;
+
     
 }
 
 .iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
-    width: calc(50% - 60px);
+    width: calc(50% - 40px);
     display: flex;
-    margin: 25px;
-
+    margin: 20px;
 }
 
 .iPod {
-    margin-left: 20px;
-    width: 100%;
-    padding: 10px;
+    width: 160%
 }
 
-.iPad1 h3, .iPad2 h3, .iPad3 h3, .iPad4 h3, .iPad5 h3, .iPad6 h3 {
+.iPod h3 {
     font-family: $baseFont;
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 } 
 
-.iPad1 p, .iPad2 p, .iPad3 p, .iPad4 p, .iPad5 p, .iPad6 p {
+.iPod p {
     font-family: $secondFont;
     font-size: 0.7rem;
     opacity: 0.5;
@@ -183,7 +208,7 @@ header {
 .iPadBox i {
     position: relative;
     padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -191,42 +216,111 @@ header {
     content: "";
     position: absolute;
     border: 2px solid #333333;
-    top: -10px;
-    left: -10px;
-    width: 4rem;
-    height: 4rem;
+    top: -5px;
+    left: -5px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     text-align: center;
 }
 
 .wand, .pin, .desktop, .shoppingBag, .sliders, .smileyFace {
     display: flex;
-    width: 20%;
-    margin-right: 15px;
+    width: 50%;
     }
 
 .iPadBox .pin i::after {
     content: "";
     position: absolute;
     border: 2px solid #333333;
-    top: -10px;
-    left: -20px;
-    width: 4rem;
-    height: 4rem;
+    top: -5px;
+    left: -10px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     text-align: center;
 }
+
+.team h2 {
+    font-family: $baseFont;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 1.8px;
+    color: $primary;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 100px;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+}
+.play {
+    background-color: $secondary;
+    width: 47%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 18px;
+    margin-top: 15px;
+    padding: 120px 0 0 50px;
+
+
+}
+
+.play h3 {
+    font-family: $baseFont;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1.8px;
+    color: rgba(51, 51, 51, .8)
+}
+.play p {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: rgba(51, 51, 51, .8);
+    line-height: 1.2rem;
+}
+.pics1 {
+    margin: 15px;
+}
+
+.pics2 {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.work h3 {
+    font-family: $baseFont;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 60px;
+    padding-top: 100px;
+    color: rgba(51, 51, 51, .8)
+
+}
+
+.work span {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    padding-top: 0;
+    color: rgba(51, 51, 51, .8)
+}
+
 
 .contact {
     display: flex;
     flex-direction: row;
     color: $tertiary;
     background: $primary;
+    padding: 60px;
 }
 
-.contacts, .recentPosts, .twitter {
-    padding: 80px;
-}
 
 .contacts {
     text-align: left;
@@ -246,6 +340,68 @@ header {
     background: $last;
     border: 1px solid #333333
 }
+
+.contacts, .recentPosts, .twitter {
+    padding: 10px 30px;
+}
+.contact h3 {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contacts h3 {
+    text-align: left;
+
+}
+
+.contacts p {
+    text-align: left;
+}
+
+.contacts i {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.recentPosts h3 {
+    text-align: center;
+}
+
+.recentPosts ul {
+    font-size: 0.7rem;
+}
+
+.twitter h3 {
+    text-align: right;
+}
+
+.contact p {
+    font-size: 0.7rem;
+}
+
+.twitter p {
+    text-align: right;
+}
+.contact input[type=email] {
+    border: 1px solid $primary;
+    color: $primary;
+    margin: 0;
+    font-size: 0.7rem;
+    width: 80%;
+    padding: 1em 1.5em;
+}
+
+.twitter form {
+    display: flex;
+}
+
+.twitter button {
+    background: $last;
+    border: 1px solid #333333;
+    padding: 0.5rem;
+}
+
 
 @media(max-width: 940px) {
 

@@ -24,6 +24,8 @@
     position: relative;
 }
 
+
+
 .h2 {
     position: absolute;
     top: 170px;
@@ -86,24 +88,29 @@ span {
 
 .contact6 button {
     border: none;
-    border-bottom: 2px solid $secondary;
+    border-bottom: 2px solid $primary;
     color: rgba(51, 51, 51, 0.5);
     background-color: $tertiary;
     margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
 }
 
 input[type=subject], input[type=name] {
     border: none;
     border-bottom: 2px solid $secondary;
     color: rgba(51, 51, 51, 0.5);
+    font-size: 0.7rem;
+    padding-right: 200px;
 }
 
 .contact6 input[type=email] {
     border: none;
     border-bottom: 2px solid $primary;
     color: $primary;
-    margin: 0 200px;
-    padding: 0em 1em;
+    margin: 0 50px;
+    padding-right: 200px;
+    font-size: 0.7rem;
 
 }
 textarea {
@@ -114,6 +121,83 @@ textarea {
     color: rgba(51, 51, 51, 0.4);
     margin-bottom: 50px;
     margin-top: 50px;
+    font-size: 0.7rem;
+}
+
+.contact8 {
+    background-image: url(../assets/contact-2.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    height: 90vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    color: $tertiary;
+    background: $primary;
+    padding: 60px;
+}
+
+.contacts, .recentPosts, .twitter {
+    padding: 10px 30px;
+}
+.contact h3 {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contacts h3 {
+    text-align: left;
+
+}
+
+.contacts p {
+    text-align: left;
+}
+
+.contacts i {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.recentPosts h3 {
+    text-align: center;
+}
+
+.recentPosts ul {
+    font-size: 0.7rem;
+}
+
+.twitter h3 {
+    text-align: right;
+}
+
+.contact p {
+    font-size: 0.7rem;
+}
+
+.twitter p {
+    text-align: right;
+}
+.contact input[type=email] {
+    border: 1px solid $primary;
+    color: $primary;
+    margin: 0;
+    font-size: 0.7rem;
+    width: 80%;
+    padding: 1em 1.5em;
+}
+
+.twitter form {
+    display: flex;
+}
+
+.twitter button {
+    background: $last;
+    border: 1px solid #333333;
+    padding: 0.5rem;
 }
 
 @media(max-width: 940px) {

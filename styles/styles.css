@@ -292,6 +292,17 @@ p {
       justify-content: space-around;
   font-size: 0.7rem;
   margin: 5px;
+  position: relative;
+}
+
+.menu1 .home a::before {
+  content: "";
+  height: 1px;
+  width: 120%;
+  background-color: #333333;
+  position: absolute;
+  top: 9px;
+  left: -5px;
 }
 
 footer {
@@ -299,7 +310,7 @@ footer {
   color: #ffffff;
   height: 30vh;
   padding: 80px;
-  border-top: 2px solid rgba(51, 51, 51, 0.3);
+  border-top: 2px solid rgba(246, 246, 246, 0.3);
 }
 
 footer p {
@@ -354,6 +365,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
+  position: relative;
 }
 
 .branding p {
@@ -378,14 +390,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.pics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .splits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,17 +406,25 @@ header {
 .egy h2 {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .egy a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.7rem;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   background-color: #ffffff;
   color: #333333;
+}
+
+.egy p {
+  font-size: 0.9rem;
+  color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 .ketto {
@@ -428,6 +440,7 @@ header {
 
 .circle {
   padding: 180px;
+  position: relative;
 }
 
 .circlePic {
@@ -438,10 +451,26 @@ header {
   border-radius: 50%;
 }
 
+.arrow1 {
+  position: absolute;
+  font-size: 40px;
+  top: 380px;
+  left: 200px;
+}
+
+.arrow2 {
+  position: absolute;
+  font-size: 40px;
+  color: rgba(51, 51, 51, 0.5);
+  top: 380px;
+  right: 200px;
+}
+
 .three p {
   text-align: center;
-  line-height: 24px;
+  line-height: 1.8rem;
   padding-top: 20px;
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .iPadWrapper {
@@ -471,30 +500,30 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 50%;
-  padding: 80px;
+  padding: 150px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
-  width: calc(50% - 60px);
+  width: calc(50% - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 25px;
+  margin: 20px;
 }
 
 .iPod {
-  margin-left: 20px;
-  width: 100%;
-  padding: 10px;
+  width: 160%;
 }
 
-.iPad1 h3, .iPad2 h3, .iPad3 h3, .iPad4 h3, .iPad5 h3, .iPad6 h3 {
+.iPod h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
-.iPad1 p, .iPad2 p, .iPad3 p, .iPad4 p, .iPad5 p, .iPad6 p {
+.iPod p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   opacity: 0.5;
@@ -503,17 +532,17 @@ header {
 .iPadBox i {
   position: relative;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .iPadBox i::after {
   content: "";
   position: absolute;
   border: 2px solid #333333;
-  top: -10px;
-  left: -10px;
-  width: 4rem;
-  height: 4rem;
+  top: -5px;
+  left: -5px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   text-align: center;
 }
@@ -522,20 +551,94 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20%;
-  margin-right: 15px;
+  width: 50%;
 }
 
 .iPadBox .pin i::after {
   content: "";
   position: absolute;
   border: 2px solid #333333;
-  top: -10px;
-  left: -20px;
-  width: 4rem;
-  height: 4rem;
+  top: -5px;
+  left: -10px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   text-align: center;
+}
+
+.team h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1.8px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 100px;
+}
+
+.pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.play {
+  background-color: #f6f6f6;
+  width: 47%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 18px;
+  margin-top: 15px;
+  padding: 120px 0 0 50px;
+}
+
+.play h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1.8px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.play p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgba(51, 51, 51, 0.8);
+  line-height: 1.2rem;
+}
+
+.pics1 {
+  margin: 15px;
+}
+
+.pics2 {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.work h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 60px;
+  padding-top: 100px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.work span {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  padding-top: 0;
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .contact {
@@ -548,10 +651,7 @@ header {
           flex-direction: row;
   color: #ffffff;
   background: #333333;
-}
-
-.contacts, .recentPosts, .twitter {
-  padding: 80px;
+  padding: 60px;
 }
 
 .contacts {
@@ -572,4 +672,68 @@ header {
 .twitter button {
   background: #c3dab7;
   border: 1px solid #333333;
+}
+
+.contacts, .recentPosts, .twitter {
+  padding: 10px 30px;
+}
+
+.contact h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.contacts h3 {
+  text-align: left;
+}
+
+.contacts p {
+  text-align: left;
+}
+
+.contacts i {
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+.recentPosts h3 {
+  text-align: center;
+}
+
+.recentPosts ul {
+  font-size: 0.7rem;
+}
+
+.twitter h3 {
+  text-align: right;
+}
+
+.contact p {
+  font-size: 0.7rem;
+}
+
+.twitter p {
+  text-align: right;
+}
+
+.contact input[type=email] {
+  border: 1px solid #333333;
+  color: #333333;
+  margin: 0;
+  font-size: 0.7rem;
+  width: 80%;
+  padding: 1em 1.5em;
+}
+
+.twitter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.twitter button {
+  background: #c3dab7;
+  border: 1px solid #333333;
+  padding: 0.5rem;
 }

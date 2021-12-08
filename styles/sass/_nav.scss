@@ -18,6 +18,8 @@
 
 }
 
+
+
 .menu1 a,
 .menu2 a {
     text-decoration: none;
@@ -28,5 +30,15 @@
     justify-content: space-around;
     font-size: 0.7rem;
     margin: 5px;
+    position: relative;
+}
 
+.menu1 .home a::before {
+    content: "";
+    height: 1px;
+    width: 120%;
+    background-color: $primary;
+    position: absolute;
+    top: 9px;
+    left: -5px;
 }
