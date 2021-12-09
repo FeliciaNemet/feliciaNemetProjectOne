@@ -226,7 +226,7 @@ textarea {
 }
 
 .contacts, .recentPosts, .twitter {
-    padding: 10px 30px;
+    padding: 10px 50px;
 }
 .contact h3 {
     font-family: $secondFont;
@@ -256,7 +256,7 @@ textarea {
     font-size: 0.7rem;
 }
 
-.twitter h3 {
+.twitter {
     text-align: right;
 }
 
@@ -264,9 +264,6 @@ textarea {
     font-size: 0.7rem;
 }
 
-.twitter p {
-    text-align: right;
-}
 .contact input[type=email] {
     border: 1px solid $primary;
     color: $primary;
@@ -287,12 +284,48 @@ textarea {
 }
 
 @media(max-width: 940px) {
+.blog5 {
+    flex-direction: column;
+}
+
+.card1, .card2, .card3 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
 
 }
 
 
 @media(max-width: 767px) {
 
+    .blog9 input[type=email] {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+}
+
+input[type=subject], input[type=name] {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+}
+
+    .contact {
+    flex-direction: column;
+}
+
+.contacts, .recentPosts, .twitter {
+    text-align: center;
+}
+
+.contacts, .recentPosts, .twitter {
+    padding: 10px;
+}
+
+.contacts h3, .contacts p{
+    text-align: center;
+}
 
 
 }
@@ -301,6 +334,14 @@ textarea {
 @media(max-width: 480px) {
 
 
+.sMIcons {
+    display: flex;
+    flex-direction: column;
+}
 
+.twitter form {
+    width: 100%;
+    margin: 0;
+}
     
 }

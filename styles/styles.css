@@ -305,6 +305,14 @@ p {
   left: -5px;
 }
 
+@media (max-width: 480px) {
+  .menu1 ul, .menu2 ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer {
   background: #333333;
   color: #ffffff;
@@ -357,7 +365,7 @@ header {
   background-color: rgba(51, 51, 51, 0.5);
   position: absolute;
   top: 0px;
-  left: 45%;
+  left: 46%;
   margin: 0 auto;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -365,6 +373,7 @@ header {
 
 .branding .img1 {
   text-align: center;
+  width: auto;
 }
 
 .branding .img2 {
@@ -527,7 +536,8 @@ header {
 }
 
 .iPod {
-  width: 160%;
+  width: 200%;
+  margin-left: 10px;
 }
 
 .iPod h3 {
@@ -581,6 +591,7 @@ header {
 
 .team {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .team::before {
@@ -644,6 +655,7 @@ header {
 
 .pics1 {
   margin: 15px;
+  margin-bottom: 20px;
 }
 
 .pics2 {
@@ -705,7 +717,7 @@ header {
 }
 
 .contacts, .recentPosts, .twitter {
-  padding: 10px 30px;
+  padding: 10px 50px;
 }
 
 .contact h3 {
@@ -735,16 +747,12 @@ header {
   font-size: 0.7rem;
 }
 
-.twitter h3 {
+.twitter {
   text-align: right;
 }
 
 .contact p {
   font-size: 0.7rem;
-}
-
-.twitter p {
-  text-align: right;
 }
 
 .contact input[type=email] {
@@ -766,4 +774,46 @@ header {
   background: #c3dab7;
   border: 1px solid #333333;
   padding: 0.5rem;
+}
+
+@media (max-width: 940px) {
+  .play {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts, .recentPosts, .twitter {
+    text-align: center;
+  }
+
+  .contacts h3, .contacts p {
+    text-align: center;
+  }
+
+  .contacts, .recentPosts, .twitter {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .sMIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .twitter form {
+    width: 100%;
+    margin: 0;
+  }
 }
