@@ -305,7 +305,23 @@ p {
   left: -5px;
 }
 
-@media (max-width: 480px) {
+.menu2 .bag a::after {
+  content: "2";
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 2px;
+  font-family: "Open Sans", sans-serif;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  color: #333333;
+  background-color: #c3dab7;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+@media (max-width: 767px) {
   .menu1 ul, .menu2 ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -776,17 +792,104 @@ header {
   padding: 0.5rem;
 }
 
+@media (max-width: 1100px) {
+  .iPadBox {
+    background-color: #f6f6f6;
+  }
+}
 @media (max-width: 940px) {
+  .branding::before {
+    display: none;
+  }
+
+  .team::before {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .arrow1, .arrow2 {
+    display: none;
+  }
+
+  .three {
+    text-align: left;
+    display: block;
+  }
+
+  .pics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
   .play {
     width: 100%;
   }
-}
-@media (max-width: 767px) {
+
+  .pics1, .pics2 {
+    width: 100%;
+  }
+
+  .iPadBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+  }
+
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .iPadBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 100%;
+  }
+
+  .iPadBox i {
+    width: 10%;
+  }
+
+  .iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
+    width: 90%;
+    margin: 5px;
+  }
+
+  .splits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .egy {
+    width: 100%;
+  }
+
+  .ketto {
+    width: 100%;
   }
 
   .contacts, .recentPosts, .twitter {
@@ -802,6 +905,10 @@ header {
   }
 }
 @media (max-width: 480px) {
+  .circlePic {
+    display: none;
+  }
+
   .sMIcons {
     display: -webkit-box;
     display: -ms-flexbox;

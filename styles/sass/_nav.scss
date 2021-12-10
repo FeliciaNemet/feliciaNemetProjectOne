@@ -43,7 +43,24 @@
     left: -5px;
 }
 
-@media(max-width: 480px) {
+
+.menu2 .bag a::after {
+    content: "2";
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 2px;
+    font-family: $secondFont;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    color: $primary;
+    background-color: $last;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+@media(max-width: 767px) {
 
     .menu1 ul, .menu2 ul {
         flex-direction: column;

@@ -432,20 +432,102 @@ header {
 }
 
 
+@media(max-width: 1100px) {
+    .iPadBox {
+        background-color: $secondary;
+
+    }
+}
+
+
+
 @media(max-width: 940px) {
 
+    .branding::before {
+        display: none;
+    }
+
+    .team::before {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+
+
+    .arrow1, .arrow2 {
+        display: none;
+    }
+
+    .three {
+        text-align: left;
+        display: block;
+
+    }
+
+    .pics {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
     .play {
         width: 100%;
     }
 
+    .pics1, .pics2 {
+        width: 100%;
+    }
+
+    .iPadBox {
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        text-align: center;
+        background-color: $secondary;
+    }
+
+    .contact {
+    flex-direction: column;
+}
 }
 
 
 @media(max-width: 767px) {
 
-    .contact {
-    flex-direction: column;
-}
+
+
+    .iPadBox {
+        flex-direction: column;
+        justify-content: right;
+        width: 100%;
+
+    }
+
+    .iPadBox i {
+        width: 10%;
+    }
+
+    .iPad1, .iPad2, .iPad3, .iPad4, .iPad5, .iPad6 {
+        width: 90%;
+        margin: 5px;
+    }
+
+    
+
+
+    .splits {
+        flex-direction: column;
+    }
+
+    .egy {
+        width: 100%;
+    }
+
+    .ketto {
+        width: 100%;
+    }
+
+    
 
 .contacts, .recentPosts, .twitter {
     text-align: center;
@@ -459,10 +541,16 @@ header {
     padding: 10px;
 }
 
+
+
+
 }
 
 @media(max-width: 480px) {
 
+    .circlePic {
+        display: none;
+    }
 
     .sMIcons {
     display: flex;

@@ -283,21 +283,32 @@ textarea {
     padding: 0.5rem;
 }
 
-@media(max-width: 940px) {
-.blog5 {
-    flex-direction: column;
-}
+@media(max-width: 1200px) {
 
-.card1, .card2, .card3 {
+    .blog5 {
+    flex-direction: column;
+    }
+
+    .card1, .card2, .card3 {
     width: 100%;
     margin: 0;
     text-align: center;
+    }
+
+    .blog9 input[type=email] {
+    width: 50%;
+    margin: 0;
+    margin-top: 50px;
+    }   
+
+    input[type=subject], input[type=name] {
+    width: 50%;
+    margin: 0;
+    margin-top: 50px;
+    }
 }
 
-}
-
-
-@media(max-width: 767px) {
+@media(max-width: 940px) {
 
     .blog9 input[type=email] {
     width: 100%;
@@ -311,7 +322,18 @@ input[type=subject], input[type=name] {
     margin-top: 50px;
 }
 
-    .contact {
+.contact {
+    flex-direction: column;
+}
+
+}
+
+
+@media(max-width: 767px) {
+
+
+
+.master {
     flex-direction: column;
 }
 
@@ -333,6 +355,13 @@ input[type=subject], input[type=name] {
 
 @media(max-width: 480px) {
 
+.alex {
+    flex-direction: column;
+}
+
+.blog2 {
+    flex-direction: column;
+}
 
 .sMIcons {
     display: flex;

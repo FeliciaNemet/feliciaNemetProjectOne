@@ -214,14 +214,36 @@ textarea {
 
 @media(max-width: 940px) {
 
+    .contactImg {
+        background-size: cover;
+        height: 20vh;
+    }
+
+    .h2 {
+        top: 150px;
+        left: 0;
+    }
+
+    .contact {
+    flex-direction: column;
+}
+
+.contact8 {
+    height: 40vh;
+}
 
 }
 
 
 @media(max-width: 767px) {
 
-
-
+    .h2 {
+        top: 250px;
+        left: 0;
+    }
+    .contactImg {
+        height: 10vh;
+    }
     .contact2 {
         flex-direction: column;
     }
@@ -243,9 +265,6 @@ input[type=subject], input[type=name] {
     margin-top: 50px;
 }
 
-.contact {
-    flex-direction: column;
-}
 
 .contacts, .recentPosts, .twitter {
     padding: 10px;
