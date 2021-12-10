@@ -353,6 +353,10 @@ footer p {
   font-size: 0.9rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .visuallyHidden {
   display: none;
 }
@@ -464,6 +468,11 @@ span {
   font-size: 0.7rem;
 }
 
+.contact6 button:hover {
+  color: #c3dab7;
+  background-color: #333333;
+}
+
 input[type=subject], input[type=name] {
   border: none;
   border-bottom: 2px solid #f6f6f6;
@@ -570,6 +579,11 @@ textarea {
   background: #c3dab7;
   border: 1px solid #333333;
   padding: 0.5rem;
+}
+
+.twitter button:hover {
+  background-color: #333333;
+  color: #c3dab7;
 }
 
 @media (max-width: 940px) {
