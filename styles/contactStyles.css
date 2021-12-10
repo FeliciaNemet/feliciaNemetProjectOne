@@ -296,6 +296,12 @@ p {
   position: relative;
 }
 
+.menu1 a:hover,
+.menu2 a:hover {
+  color: #c3dab7;
+  background-color: #333333;
+}
+
 .menu1 .home a::before {
   content: "";
   height: 1px;
