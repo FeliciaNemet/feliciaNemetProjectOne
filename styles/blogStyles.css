@@ -295,6 +295,11 @@ p {
   position: relative;
 }
 
+.menu1 a:hover, .menu2 a:hover {
+  color: #c3dab7;
+  background-color: #333333;
+}
+
 .menu1 .home a::before {
   content: "";
   height: 1px;
@@ -344,6 +349,10 @@ footer p {
   font-weight: bold;
   letter-spacing: 1.8px;
   font-size: 0.9rem;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -546,6 +555,14 @@ header {
   color: rgba(51, 51, 51, 0.5);
   background-color: #ffffff;
   margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.blog9 button:hover {
+  background-color: #333333;
+  color: #c3dab7;
 }
 
 input[type=subject], input[type=name] {
@@ -658,6 +675,11 @@ textarea {
   background: #c3dab7;
   border: 1px solid #333333;
   padding: 0.5rem;
+}
+
+.twitter button:hover {
+  color: #c3dab7;
+  background-color: #333333;
 }
 
 @media (max-width: 1200px) {

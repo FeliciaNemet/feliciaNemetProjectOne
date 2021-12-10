@@ -13,6 +13,7 @@
 
 body {
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -123,6 +124,13 @@ header {
     padding: 1em 2em;
     background-color: $tertiary;
     color: $primary;
+}
+
+.egy a:hover {
+
+    color: $last;
+    background-color: $primary;
+
 }
 .egy p {
     font-size: 0.9rem;
@@ -429,6 +437,11 @@ header {
     background: $last;
     border: 1px solid #333333;
     padding: 0.5rem;
+}
+
+.twitter button:hover {
+    color: $last;
+    background-color: $primary;
 }
 
 

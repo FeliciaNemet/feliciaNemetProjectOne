@@ -6,6 +6,12 @@
 @import "nav";
 @import "footer";
 
+
+body {
+    overflow-x: hidden;
+}
+
+
 .visuallyHidden {
     display: none;
 }
@@ -111,6 +117,11 @@ span {
     font-size: 0.7rem;
 }
 
+.contact6 button:hover {
+    background-color: $primary;
+    color: $last;
+}
+
 input[type=subject], input[type=name] {
     border: none;
     border-bottom: 2px solid $secondary;
@@ -210,6 +221,11 @@ textarea {
     background: $last;
     border: 1px solid #333333;
     padding: 0.5rem;
+}
+
+.twitter button:hover {
+    color: $last;
+    background-color: $primary;
 }
 
 @media(max-width: 940px) {

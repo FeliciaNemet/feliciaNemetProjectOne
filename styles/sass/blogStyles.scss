@@ -5,6 +5,10 @@
 @import "nav";
 @import "footer";
 
+body {
+    overflow-x: hidden;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -178,6 +182,14 @@ header {
     color: rgba(51, 51, 51, 0.5);
     background-color: $tertiary;
     margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: $secondFont;
+}
+
+.blog9 button:hover {
+    background-color: $primary;
+    color: $last;
 }
 
 input[type=subject], input[type=name] {
@@ -281,6 +293,11 @@ textarea {
     background: $last;
     border: 1px solid #333333;
     padding: 0.5rem;
+}
+
+.twitter button:hover {
+    color: $last;
+    background-color: $primary;
 }
 
 @media(max-width: 1200px) {
