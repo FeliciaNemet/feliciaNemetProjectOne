@@ -312,6 +312,21 @@ p {
   left: -5px;
 }
 
+header .toggle {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  padding: 0.2em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .toggle:hover {
+  color: #c3dab7;
+  background-color: #333333;
+}
+
 .menu2 .bag a::after {
   content: "2";
   font-size: 0.5rem;
@@ -355,6 +370,52 @@ footer p {
 
 body {
   overflow-x: hidden;
+}
+
+.popup {
+  background-color: #c3dab7;
+  width: 550px;
+  padding: 30px 40px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 70%;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  text-align: center;
+}
+
+.popup h3 {
+  text-transform: uppercase;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #333333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+.dark-mode {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  color: #f6f6f6;
+  background-color: #333333;
 }
 
 .visuallyHidden {

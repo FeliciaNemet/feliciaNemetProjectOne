@@ -13,8 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/blogStyles.css">
+    
 </head>
 <body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h3>Subscribe To Ceative</h3>
+        <p>
+            Signup for emails and notifications below.
+        </p>
+        <form action="">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="email" class="visuallyHidden">Email</label>
+            <button type="submit">Let's Go</button>
+        </form>
+    </div>
     <header>
         <div class="wrapper">
             <div class="navBar">
@@ -28,6 +41,9 @@
                         </li>
                         <li>
                             <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <button class="toggle">Toggle Brightness</button>
                         </li>
                     </ul>
                 </nav>
@@ -232,5 +248,6 @@
     </footer>
     
     <script src="https://kit.fontawesome.com/fd2abbb44d.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
