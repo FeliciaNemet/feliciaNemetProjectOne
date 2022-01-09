@@ -4,6 +4,7 @@
 @import "typography";
 @import "colourPalette";
 @import "nav";
+@import "popUpStyles";
 @import "footer";
 
 
@@ -13,44 +14,6 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
 }
-
-
-.popup{
-    background-color: $last;
-    width: 550px;
-    padding: 30px 40px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
-    font-family: $baseFont;
-    display: none;
-    text-align: center;
-}
-
-.popup h3 {
-    text-transform: uppercase;
-}
-.popup button{
-    display: block;
-    margin:  0 0 20px auto;
-    background-color: transparent;
-    font-size: 0.9rem;
-    color:  $primary;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-}
-.popup p{
-    font-size: 14px;
-    text-align: justify;
-    margin: 20px 0;
-    line-height: 25px;
-}
-
 
 .dark-mode {
     filter: brightness(50%);
@@ -604,17 +567,5 @@ header {
 
 @media(max-width: 480px) {
 
-    .circlePic {
-        display: none;
-    }
 
-    .sMIcons {
-    display: flex;
-    flex-direction: column;
-}
-
-.twitter form {
-    width: 100%;
-    margin: 0;
-}
 }

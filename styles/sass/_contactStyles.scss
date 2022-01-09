@@ -1,50 +1,15 @@
-
-
 @import "setup";
 @import "typography";
 @import "colourPalette";
 @import "nav";
+@import "popUpStyles";
 @import "footer";
 
 body {
     overflow-x: hidden;
 }
 
-.popup{
-    background-color: $last;
-    width: 550px;
-    padding: 30px 40px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 70%;
-    border-radius: 8px;
-    font-family: $baseFont;
-    display: none;
-    text-align: center;
-}
 
-.popup h3 {
-    text-transform: uppercase;
-}
-.popup button{
-    display: block;
-    margin:  0 0 20px auto;
-    background-color: transparent;
-    font-size: 0.9rem;
-    color:  $primary;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-}
-.popup p{
-    font-size: 14px;
-    text-align: justify;
-    margin: 20px 0;
-    line-height: 25px;
-}
 
 .dark-mode {
     filter: brightness(50%);
@@ -309,30 +274,30 @@ textarea {
     }
 
 
-.contact6 input[type=email] {
+    .contact6 input[type=email] {
     width: 100%;
     margin: 0;
     margin-top: 50px;
-}
+    }
 
-input[type=subject], input[type=name] {
+    input[type=subject], input[type=name] {
     width: 100%;
     margin: 0;
     margin-top: 50px;
-}
+    }
 
 
-.contacts, .recentPosts, .twitter {
+    .contacts, .recentPosts, .twitter {
     padding: 10px;
-}
+    }
 
-.contacts, .recentPosts, .twitter {
+    .contacts, .recentPosts, .twitter {
     text-align: center;
-}
+    }
 
-.contacts h3, .contacts p{
+    .contacts h3, .contacts p{
     text-align: center;
-}
+    }
 
 }
 

@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 125%;
 }
@@ -311,7 +316,7 @@ p {
   left: -5px;
 }
 
-header .toggle {
+.toggle {
   font-size: 0.7rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -319,9 +324,10 @@ header .toggle {
   padding: 0.2em;
   padding-top: 0;
   padding-bottom: 0;
+  background-color: #c3dab7;
 }
 
-header .toggle:hover {
+.toggle:hover {
   color: #c3dab7;
   background-color: #333333;
 }
@@ -348,30 +354,9 @@ header .toggle:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 0;
   }
 }
-footer {
-  background: #333333;
-  color: #ffffff;
-  height: 30vh;
-  padding: 80px;
-  border-top: 2px solid rgba(246, 246, 246, 0.3);
-}
-
-footer p {
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.8px;
-  font-size: 0.9rem;
-}
-
-body {
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
 .popup {
   background-color: #c3dab7;
   width: 550px;
@@ -380,7 +365,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 70%;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
   display: none;
@@ -409,6 +394,33 @@ body {
   text-align: justify;
   margin: 20px 0;
   line-height: 25px;
+}
+
+@media (max-width: 767px) {
+  .popup {
+    max-width: 60%;
+  }
+}
+footer {
+  background: #333333;
+  color: #ffffff;
+  height: 30vh;
+  padding: 80px;
+  border-top: 2px solid rgba(246, 246, 246, 0.3);
+}
+
+footer p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .dark-mode {
@@ -980,25 +992,5 @@ header {
 
   .contacts, .recentPosts, .twitter {
     padding: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .circlePic {
-    display: none;
-  }
-
-  .sMIcons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .twitter form {
-    width: 100%;
-    margin: 0;
   }
 }

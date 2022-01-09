@@ -48,7 +48,7 @@
     top: 9px;
     left: -5px;
 }
-header .toggle {
+.toggle {
     font-size: 0.7rem;
     text-transform: uppercase;
     font-family: $baseFont;
@@ -56,9 +56,10 @@ header .toggle {
     padding: 0.2em;
     padding-top: 0;
     padding-bottom: 0;
+    background-color: $last;
     
 }
-header .toggle:hover {
+.toggle:hover {
     color: $last;
     background-color: $primary;
 }
@@ -83,5 +84,7 @@ header .toggle:hover {
 
     .menu1 ul, .menu2 ul {
         flex-direction: column;
+        padding-left: 0;
+        // margin-left: 0;
     }
 }

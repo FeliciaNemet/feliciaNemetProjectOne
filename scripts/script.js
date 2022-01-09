@@ -3,6 +3,12 @@ document.querySelector(`.toggle`).addEventListener(`click`,(event) => {
     const element = document.querySelector(`body`);
     element.classList.toggle("dark-mode");
 });
+
+
+
+
+
+
 // Make a popup ad
 window.addEventListener("load", function () {
     setTimeout(
