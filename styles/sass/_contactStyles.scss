@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .dark-mode {
     filter: brightness(50%);
     color: $secondary;
@@ -233,6 +231,13 @@ textarea {
     color: $last;
 }
 
+// footer {
+//     height: 50vh;
+// }
+
+// footer a {
+//     text-decoration: none;
+// }
 @media(max-width: 940px) {
 
     .contactImg {
@@ -304,14 +309,13 @@ textarea {
 
 @media(max-width: 480px) {
 
-.sMIcons {
+    .sMIcons {
     display: flex;
     flex-direction: column;
-}
+    }
 
-.twitter form {
+    .twitter form {
     width: 100%;
     margin: 0;
-}
-    
+    } 
 }
